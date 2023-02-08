@@ -53,8 +53,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="nav_socials">
-        {socials.map((social) => (
-          <a href={social.link} target="_blank" rel="noreferrer">
+        {socials.map((social, index) => (
+          <a key={index} href={social.link} target="_blank" rel="noreferrer">
             {social.svg}
           </a>
         ))}

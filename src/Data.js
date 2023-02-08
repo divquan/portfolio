@@ -3,7 +3,19 @@ import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { FaUser, FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
+import {
+  FaUser,
+  FaPhoneAlt,
+  FaPaperPlane,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaSass,
+  FaFigma,
+  FaReact,
+  FaWordpress,
+  FaNodeJs,
+} from "react-icons/fa";
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
 export const socials = [
@@ -36,5 +48,38 @@ export const bios = [
     icon: <FaPaperPlane />,
     key: "Email",
     value: "divquan@gmail.com",
+  },
+];
+
+export const SkillIcons = [
+  <FaHtml5 />,
+  <FaCss3 />,
+  <FaJs />,
+  <FaReact />,
+  <FaSass />,
+  <FaFigma />,
+  <FaWordpress />,
+  <FaNodeJs />,
+  // <FaReactNative />,
+];
+
+export const experiences = [
+  {
+    year: "2021 - Present",
+    position: "Bsc. Computer Eng.",
+    company: "KNUST -  Ghana",
+    link: "https://compeng.knust.edu.gh",
+  },
+  {
+    year: "2020 - Present",
+    position: "Web Developer",
+    company: "CLC - GH",
+    link: "https://clcgh.org",
+  },
+  {
+    year: "2022 - 2023",
+    position: "Frontend Developer Intern",
+    company: "MegaMind Inc",
+    link: "",
   },
 ];
