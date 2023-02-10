@@ -1,12 +1,19 @@
 #about {
   display: flex;
+  padding-top: 5.5rem;
+  margin-bottom: 4rem;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   .about_header {
-    font-size: 1.3rem;
-    color: #8c12f0;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    p {
+      font-size: 1.3rem;
+      color: #8c12f0;
+      font-weight: 600;
+    }
   }
   h3 {
     font-size: 3.4rem;
@@ -15,30 +22,29 @@
   }
   .about_container {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 5rem;
     // margin-left: 9rem;
     // margin-right: 9rem;
 
     color: white;
     flex-direction: row;
     align-items: center;
-    gap: 6rem;
+    row-gap: 4rem;
+    column-gap: 6rem;
     @media screen and (max-width: 930px) {
       flex-direction: column;
     }
     .about_container-col1 {
       box-shadow: 0 0 20px #8c12f0;
-      background: #8c12f0;
-      border-radius: 7px;
-      height: calc(15rem + 10vw);
-      width: calc(13rem + 10vw);
-      transition: 0.4s ease-in;
+      background: #8c12f000;
+      border-radius: 8px;
+      height: calc(16rem + 10vw);
+      width: calc(14em + 10vw);
+      transition: 0.2s ease-in;
       cursor: pointer;
-      &:hover {
-        transform: translateY(-12px) scale(1.1);
-      }
+
       img {
-        border-radius: 7px;
+        border-radius: 8px;
         height: 100%;
         width: 100%;
         object-fit: cover;

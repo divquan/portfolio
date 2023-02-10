@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import { experiences, SkillIcons } from "../../../Data";
-
+import { motion } from "framer-motion";
 import "./Skills.scss";
 const Skills = () => {
   const [active, setActive] = useState(1);
 
   return (
     <div id="skills" className="skills_container">
-      <div className="skills_container-header">
+      <motion.div
+        className="skills_container-header"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ delay: 0.4 }}
+      >
         <p>What can I do?</p>
         <h3>Skills</h3>
-      </div>
-      <div className="skills-buttons">
+      </motion.div>
+      <motion.div
+        className="skills-buttons"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         <div
           className={active === 1 ? "buttona active" : "buttona inactive"}
           onClick={() => setActive(1)}
@@ -28,17 +37,25 @@ const Skills = () => {
             <p>Experiences</p>
           </div>
         </div>
-      </div>
+      </motion.div>
       {active === 1 && (
-        <div className="skillIcons">
+        <motion.div
+          className="skillIcons"
+          initial={{ opacity: 0 }}
+          whileInView={{ y: [-50, 0], opacity: 1 }}
+        >
           {SkillIcons.map((icon, index) => (
             <div key={index}>{icon}</div>
           ))}
-        </div>
+        </motion.div>
       )}
 
       {active === 2 && (
-        <div className="skillsExperiences">
+        <motion.div
+          className="skillsExperiences"
+          initial={{ opacity: 0 }}
+          whileInView={{ y: [-50, 0], opacity: 1 }}
+        >
           <div className="experiencs">
             {experiences.map((experience, index) => (
               <div className="experience" key={index}>
@@ -50,7 +67,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

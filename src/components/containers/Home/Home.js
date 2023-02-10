@@ -5,7 +5,15 @@ import { motion } from "framer-motion";
 import Button from "../../Button/Button";
 const Home = () => {
   return (
-    <div id="home">
+    <motion.div
+      id="home"
+      initial={{ y: -15, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        delay: 0.5,
+      }}
+    >
       <div className="home_img">
         <img src={profile} alt="avatar" />
       </div>
@@ -16,14 +24,19 @@ const Home = () => {
         <p style={{ fontSize: "0.85rem", color: "rgba(255, 255, 255, 0.438)" }}>
           A fullstack developer
         </p>
-        <p className="text">
+        <motion.p
+          className="text"
+          initial={{ opacity: 0, x: -250 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1.5 }}
+        >
           Passionate <br />
           to craft innovative
           <br /> web products
-        </p>
+        </motion.p>
       </div>
       <Button buttonName="Connect With Me " />
-    </div>
+    </motion.div>
   );
 };
 

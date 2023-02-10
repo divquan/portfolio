@@ -16,6 +16,12 @@ import {
   FaWordpress,
   FaNodeJs,
 } from "react-icons/fa";
+import work1 from "./assets/work1.png";
+import work2 from "./assets/work2.png";
+import work3 from "./assets/work3.png";
+import work4 from "./assets/work4.png";
+import work5 from "./assets/work5.png";
+import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
 export const socials = [
@@ -81,5 +87,56 @@ export const experiences = [
     position: "Frontend Developer Intern",
     company: "MegaMind Inc",
     link: "",
+  },
+];
+
+export const portfolios = [
+  {
+    type: "web",
+    img: work1,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
+  },
+  {
+    type: "web",
+    img: work2,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
+  },
+  {
+    type: "design",
+    img: work3,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
+  },
+  {
+    type: "app",
+    img: work4,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
+  },
+  {
+    type: "app",
+    img: work5,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
+  },
+  {
+    type: "app",
+    img: work6,
+    previewLink: "",
+    githubLink: "",
+    title: "",
+    description: "",
   },
 ];

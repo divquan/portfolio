@@ -24,11 +24,16 @@ const Navbar = () => {
     },
   };
   const navLinksVariants = {
-    hidden: { display: "none", opacitiy: 0 },
+    hidden: {
+      display: "none",
+      opacity: 0,
+    },
     visible: {
-      opacitiy: 1,
+      opacity: 1,
       y: -30,
-      transition: { delay: 0.7 },
+      transition: {
+        delay: 0.7,
+      },
     },
   };
   useEffect(() => {
@@ -39,10 +44,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={scroll ? "nav_container active" : "nav_container"}>
-      <div className="nav_logo">
+    <motion.div
+      className={scroll ? "nav_container active" : "nav_container"}
+      initial={{ y: -25 }}
+      animate={{ y: -5 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="nav_logo"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
         <h3>dq</h3>
-      </div>
+      </motion.div>
       <div>
         <ul className="nav_links">
           {navLinks.map((navLink, index) => (
@@ -82,17 +97,21 @@ const Navbar = () => {
         initial="hidden"
         animate={toggle ? "visible" : "hidden"}
       >
-        <div className="menu-items">
+        <motion.div className="menu-items">
           {navLinks.map((navLink, index) => (
-            <li key={index}>
+            <motion.li
+              key={index}
+              variants={navLinksVariants}
+              animate={toggle ? "visible" : "hidden"}
+            >
               <a href={`#${navLink}`} onClick={() => setToggle(false)}>
                 {navLink}
               </a>
-            </li>
+            </motion.li>
           ))}
-        </div>
+        </motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
