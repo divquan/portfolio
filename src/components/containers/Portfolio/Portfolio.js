@@ -3,6 +3,7 @@ import "./Portfolio.scss";
 import { portfolios } from "../../../Data";
 import { FiGithub, FiEye } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Portfolio = () => {
   const [active_a, setActive_a] = useState(1);
@@ -80,7 +81,13 @@ const Portfolio = () => {
       >
         {works.map((portfolio, index) => (
           <div className="single_work" key={index}>
-            <img src={portfolio.img} alt={portfolio.title}></img>
+            <LazyLoadImage
+              src={portfolio.img}
+              width={600}
+              height={400}
+              PlaceholderSrc={portfolio.img_x}
+              alt="Image Alt"
+            />
             <motion.div
               initial={{ opacity: 0 }}
               whileHover={{ opacity: [0, 1] }}

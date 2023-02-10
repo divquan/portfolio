@@ -17,6 +17,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import portfolio from "./assets/portfolio.png";
+import portfolio_x from "./assets/portfolio.webp";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
@@ -94,7 +95,8 @@ export const portfolios = [
   {
     type: "web",
     img: portfolio,
-    previewLink: "",
+    img_x: portfolio_x,
+    previewLink: "https://divquan.netlify.app/",
     githubLink: "https://github.com/divquan/portfolio",
     title: "",
     description: "In development...",
