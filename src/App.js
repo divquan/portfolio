@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/Navber/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/containers/Home/Home";
 import About from "./components/containers/About/About";
 import Skills from "./components/containers/Skills/Skills";

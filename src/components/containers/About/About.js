@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../../assets/avatar.png";
+import profile from "../../../assets/avatar_2.png";
 import Button from "../../Button/Button";
 import { bios } from "../../../Data";
 import "./About.scss";

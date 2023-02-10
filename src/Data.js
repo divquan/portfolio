@@ -16,7 +16,7 @@ import {
   FaWordpress,
   FaNodeJs,
 } from "react-icons/fa";
-import work1 from "./assets/work1.png";
+import portfolio from "./assets/portfolio.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
@@ -93,11 +93,11 @@ export const experiences = [
 export const portfolios = [
   {
     type: "web",
-    img: work1,
+    img: portfolio,
     previewLink: "",
-    githubLink: "",
+    githubLink: "https://github.com/divquan/portfolio",
     title: "",
-    description: "",
+    description: "In development...",
   },
   {
     type: "web",
