@@ -39,13 +39,16 @@ function About() {
         <motion.div
           className="about_container-col2"
           initial={{ x: 0, opacity: 0 }}
-          whileInView={{ x: [250, 0], opacity: 1 }}
+          whileInView={{ x: [50, 0], opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <div className="col2_text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab magni
-            in ipsa quo, optio iste. Dolore sunt adipisci, iusto eligendi
-            architecto neque eum, magnam minima libero aliquid, sequi sit quasi.
+            Hey there! I'm Divine Korankye Quansah, a full stack developer with
+            2 years of experience. I specialize in developing web and mobile
+            applications using the MERN stack. My portfolio showcases some of
+            the apps I've built, and I hope you find them interesting. Thanks
+            for checking it out, and I'd love to chat with you about any
+            projects you have in mind!
           </div>
           <div className="col2_bios">
             {bios.map((bio) => (

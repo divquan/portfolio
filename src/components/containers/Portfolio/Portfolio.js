@@ -42,11 +42,20 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="portfolio_container">
-      <div className="portfolio_container-header">
+      <motion.div
+        className="portfolio_container-header"
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ delay: 0.4 }}
+      >
         <p>My Works</p>
         <h3>Awesome Projects</h3>
-      </div>
-      <div className="portfolio_container-buttons skills-buttons">
+      </motion.div>
+      <motion.div
+        className="portfolio_container-buttons skills-buttons "
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+      >
         <Button
           id={1}
           buttonName=" All "
@@ -71,7 +80,7 @@ const Portfolio = () => {
           active_a={active_a}
           setActive_a={setActive_a}
         />
-      </div>
+      </motion.div>
       <motion.div
         className="portfolio_container-body"
         initial={{ opacity: 0 }}

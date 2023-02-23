@@ -88,7 +88,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: calc(0.5rem + 2vw);
   .active {
     background-color: #8c12f0;
     div {
