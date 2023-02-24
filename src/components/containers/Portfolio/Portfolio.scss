@@ -1,10 +1,10 @@
 #portfolio {
   padding-top: 5rem;
   display: flex;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 .portfolio_container-header {
@@ -84,6 +84,27 @@
           align-items: center;
         }
       }
+    }
+  }
+}
+.portfolio_container-footer {
+  background-color: white;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 12px;
+  width: fit-content;
+  h2 {
+    font-size: calc(15px + 1.3vw);
+    margin: 0;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    h2 {
+      font-size: calc(24px + 1.3vw);
+
+      color: #8c12f0;
     }
   }
 }

@@ -1,0 +1,118 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio_body {
+  display: flex;
+  width: 70vw;
+  min-width: 300px;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.portfolio_body-left {
+  flex: 2;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  p {
+    margin-bottom: 13px;
+  }
+  .loc {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+      .ico {
+        background-color: #8c12f0;
+        padding: 12px;
+        border-radius: 50%;
+
+        svg {
+          color: white;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+      .link {
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .contact_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: center;
+    margin-right: 8px;
+    margin-top: 3rem;
+
+    gap: 1rem;
+    a {
+      svg {
+        width: 2.2rem;
+        height: 2.2rem;
+        color: black;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+.portfolio_body-right {
+  flex: 2;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    input {
+      height: 3.4rem;
+      width: 50%;
+      padding: 0.7rem;
+      font-size: calc(14px + 0.1vw);
+      outline: none;
+      border: none;
+      background-color: azure;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      transition: 0.4s ease-out;
+      &:focus {
+        border: #8c12f0 solid 2px;
+        background-color: #8c12f07c;
+      }
+    }
+    textarea {
+      height: 6rem;
+      width: 100%;
+      padding: 0.7rem;
+      font-size: calc(14px + 0.1vw);
+      outline: none;
+      border: none;
+      // background-color: azure;
+      background-color: #8c12f017;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      transition: 0.4s ease-out;
+      resize: none;
+    }
+  }
+}

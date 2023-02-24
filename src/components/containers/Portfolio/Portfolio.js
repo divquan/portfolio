@@ -4,11 +4,11 @@ import { portfolios } from "../../../Data";
 import { FiGithub, FiEye } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import Button from "../../Button/Button";
 const Portfolio = () => {
   const [active_a, setActive_a] = useState(1);
   const [works, setWorks] = useState(portfolios);
-  const Button = ({ id, buttonName, active_a, setActive_a }) => {
+  const Button1 = ({ id, buttonName, active_a, setActive_a }) => {
     return (
       <div
         className={active_a === id ? "buttona active" : "buttona inactive"}
@@ -56,25 +56,25 @@ const Portfolio = () => {
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
       >
-        <Button
+        <Button1
           id={1}
           buttonName=" All "
           active_a={active_a}
           setActive_a={setActive_a}
         />
-        <Button
+        <Button1
           id={2}
           buttonName="Webs"
           active_a={active_a}
           setActive_a={setActive_a}
         />
-        <Button
+        <Button1
           id={3}
           buttonName="Apps"
           active_a={active_a}
           setActive_a={setActive_a}
         />
-        <Button
+        <Button1
           id={4}
           buttonName="Designs"
           active_a={active_a}
@@ -84,9 +84,9 @@ const Portfolio = () => {
       <motion.div
         className="portfolio_container-body"
         initial={{ opacity: 0 }}
-        whileInView={{ x: [-250, 0], opacity: 1 }}
+        whileInView={{ x: [-200, 0], opacity: 1 }}
         transition={{ duration: 1 }}
-        exit={{ opacity: 0, y: -50 }}
+        // exit={{ opacity: 0, y: -50 }}
       >
         {works.map((portfolio, index) => (
           <div className="single_work" key={index}>
@@ -126,6 +126,20 @@ const Portfolio = () => {
           </div>
         ))}
       </motion.div>
+      <div className="portfolio_container-footer">
+        <h2>so let's talk about</h2>
+        <div>
+          <h2>your next projects</h2>
+          <Button
+            buttonName="Contact Me"
+            addtionalStyles={{
+              border: "#8c12f0 3px solid",
+              margin: 0,
+            }}
+          />
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 };

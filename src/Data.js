@@ -2,6 +2,7 @@ import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillLinkedin,
+  AiFillMail,
 } from "react-icons/ai";
 import {
   FaUser,
@@ -15,6 +16,9 @@ import {
   FaReact,
   FaWordpress,
   FaNodeJs,
+  FaMap,
+  FaPhone,
+  FaMailBulk,
 } from "react-icons/fa";
 import portfolio from "./assets/portfolio.png";
 import portfolio_x from "./assets/portfolio.webp";
@@ -140,5 +144,17 @@ export const portfolios = [
     githubLink: "",
     title: "",
     description: "",
+  },
+];
+
+export const Locations = [
+  { icon: <FaMap />, link: <a href="#contact">Accra,Ghana</a> },
+  {
+    icon: <AiFillMail />,
+    link: <a href="mailto:divquan@gmail.com">divquan@gmail.com</a>,
+  },
+  {
+    icon: <FaPhone />,
+    link: <a href="tel:+23321493526">+233 24 9352 628</a>,
   },
 ];
