@@ -18,7 +18,6 @@ import {
   FaNodeJs,
   FaMap,
   FaPhone,
-  FaMailBulk,
 } from "react-icons/fa";
 import portfolio from "./assets/portfolio.png";
 import portfolio_x from "./assets/portfolio.webp";
