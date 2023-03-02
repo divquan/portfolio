@@ -54,7 +54,7 @@ function Contact() {
           </div>
           <div className="row">
             <input type="text" placeholder="Phone" />
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" required />
           </div>
           <div className="row">
             <textarea placeholder="message"></textarea>
@@ -64,7 +64,7 @@ function Contact() {
             transition={{ duration: 0.3 }}
             className="btn"
           >
-            <a href="#null">Send</a>
+            <span href="#null">Send</span>
           </motion.div>
         </div>
       </motion.div>

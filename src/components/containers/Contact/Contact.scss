@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5rem;
 }
 
 .portfolio_body {
@@ -97,22 +98,35 @@
       transition: 0.4s ease-out;
       &:focus {
         border: #8c12f0 solid 2px;
-        background-color: #8c12f07c;
+        background-color: #8c12f01f;
       }
     }
     textarea {
       height: 6rem;
+      background-color: azure;
       width: 100%;
       padding: 0.7rem;
       font-size: calc(14px + 0.1vw);
       outline: none;
       border: none;
       // background-color: azure;
-      background-color: #8c12f017;
       border-radius: 16px;
       margin-bottom: 1rem;
       transition: 0.4s ease-out;
       resize: none;
+      &:focus {
+        border: #8c12f0 solid 2px;
+        background-color: #8c12f01f;
+      }
     }
+  }
+  .btn {
+    background-color: #8c12f0;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
   }
 }

@@ -44,8 +44,8 @@ const Portfolio = () => {
     <div id="portfolio" className="portfolio_container">
       <motion.div
         className="portfolio_container-header"
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
+        // initial={{ opacity: 0 }}
+        // whileInView={{ y: [-50, 0], opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
         <p>My Works</p>
@@ -125,7 +125,7 @@ const Portfolio = () => {
             </motion.div>
           </div>
         ))}
-      </motion.div>
+      </motion.div>{" "}
       <div className="portfolio_container-footer">
         <h2>so let's talk about</h2>
         <div>

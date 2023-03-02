@@ -44,9 +44,19 @@ const Skills = () => {
           initial={{ opacity: 0 }}
           whileInView={{ y: [-50, 0], opacity: 1 }}
         >
-          {SkillIcons.map((icon, index) => (
-            <div key={index}>{icon}</div>
-          ))}
+          {SkillIcons.map((icon, index) => {
+            const delaytime = index * 0.1;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: delaytime }}
+              >
+                {icon}
+              </motion.div>
+            );
+          })}
         </motion.div>
       )}
 
