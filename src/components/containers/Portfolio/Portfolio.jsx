@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Portfolio.scss";
 import { portfolios } from "../../../Data";
-// import { FiGithub, react-icons/fi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Button from "../../Button/Button";
 const Portfolio = () => {
   const [active_a, setActive_a] = useState(1);
@@ -46,7 +44,7 @@ const Portfolio = () => {
                   key={index}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  whileHover={{ scale: [0, 1.3, 1], opacity: 1 }}
+                  whileHover={{ scale: [0, 1.3, 0.8], opacity: 1 }}
                   transition={{ duration: 4 }}
                 >
                   {e}
