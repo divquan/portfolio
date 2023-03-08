@@ -98,51 +98,62 @@ export const portfolios = [
   {
     type: "web",
     img: portfolio,
-    img_x: portfolio_x,
     previewLink: "https://divquan.netlify.app/",
     githubLink: "https://github.com/divquan/portfolio",
-    title: "",
-    description: "In development...",
+    title: "Portfolio 1",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
   {
     type: "web",
     img: work2,
     previewLink: "",
     githubLink: "",
-    title: "",
-    description: "",
+    title: "Portfolio 2",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
   {
     type: "design",
     img: work3,
     previewLink: "",
     githubLink: "",
-    title: "",
-    description: "",
+    title: "Portfolio 3",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
   {
     type: "app",
     img: work4,
     previewLink: "",
     githubLink: "",
-    title: "",
-    description: "",
+    title: "Portfolio 4",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
   {
     type: "app",
     img: work5,
     previewLink: "",
     githubLink: "",
-    title: "",
-    description: "",
+    title: "Portfolio 5",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
   {
     type: "app",
     img: work6,
     previewLink: "",
     githubLink: "",
-    title: "",
-    description: "",
+    title: "Portfolio 6",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+    stack: ["React", "Scss", "NodeJs", "Express"],
   },
 ];
 
