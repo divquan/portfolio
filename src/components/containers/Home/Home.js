@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <motion.div
       id="home"
-      initial={{ y: -15, opacity: 0 }}
+      initial={{ y: -105, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 1,

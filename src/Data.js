@@ -99,7 +99,7 @@ export const portfolios = [
     img: portfolio,
     previewLink: "https://divquan.netlify.app/",
     githubLink: "https://github.com/divquan/portfolio",
-    title: "Portfolio 1",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
@@ -109,7 +109,7 @@ export const portfolios = [
     img: work2,
     previewLink: "",
     githubLink: "",
-    title: "Portfolio 2",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
@@ -117,19 +117,19 @@ export const portfolios = [
   {
     type: "design",
     img: work3,
-    previewLink: "",
-    githubLink: "",
-    title: "Portfolio 3",
+    previewLink: "https://campuswave.netlify.app",
+    githubLink: "https://github.com/divquan/campuswave",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
-    stack: ["React", "Scss", "NodeJs", "Express"],
+      "Campus Wave is a blogging app for students in the various universities in Ghana. It features an user authentication. One can, if logged in write blog posts, edit ones blog posts and delete them as well.",
+    stack: ["React", "Scss", "NodeJs", "Express", "mySQL"],
   },
   {
     type: "app",
     img: work4,
     previewLink: "",
     githubLink: "",
-    title: "Portfolio 4",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
@@ -139,7 +139,7 @@ export const portfolios = [
     img: work5,
     previewLink: "",
     githubLink: "",
-    title: "Portfolio 5",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
@@ -149,7 +149,7 @@ export const portfolios = [
     img: work6,
     previewLink: "",
     githubLink: "",
-    title: "Portfolio 6",
+    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
