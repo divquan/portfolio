@@ -7,9 +7,10 @@ const Home = () => {
   return (
     <motion.div
       id="home"
-      initial={{ y: -105, opacity: 0 }}
+      initial={{ y: -405, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
+        type: "tween",
         duration: 1,
         delay: 0.5,
       }}

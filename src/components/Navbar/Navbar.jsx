@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import { navLinks, socials } from "../../Data";
 import { MdClose, MdMenu } from "react-icons/md";
 import { motion } from "framer-motion";
-
+import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);

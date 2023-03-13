@@ -47,25 +47,26 @@ function Contact() {
         </div>
         <div className="portfolio_body-right">
           <h2> Get In Touch</h2>
-
-          <div className="row">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last name" />
-          </div>
-          <div className="row">
-            <input type="text" placeholder="Phone" />
-            <input type="email" placeholder="Email" required />
-          </div>
-          <div className="row">
-            <textarea placeholder="message"></textarea>
-          </div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-            className="btn"
-          >
-            <span href="#null">Send</span>
-          </motion.div>
+          <form netlify name="contact">
+            <div className="row">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last name" />
+            </div>
+            <div className="row">
+              <input type="text" placeholder="Phone" />
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div className="row">
+              <textarea placeholder="message"></textarea>
+            </div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+              className="btn"
+            >
+              <span href="#null">Send</span>
+            </motion.div>
+          </form>
         </div>
       </motion.div>
     </div>
