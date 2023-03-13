@@ -59,13 +59,17 @@ function Contact() {
             <div className="row">
               <textarea placeholder="message"></textarea>
             </div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
+            <motion.button
+              whileHover={{
+                backgroundColor: "white",
+                border: "#8c12f0 solid 1px",
+                color: "#8c12f0",
+              }}
               transition={{ duration: 0.3 }}
               className="btn"
             >
-              <span href="#null">Send</span>
-            </motion.div>
+              Send
+            </motion.button>
           </form>
         </div>
       </motion.div>
