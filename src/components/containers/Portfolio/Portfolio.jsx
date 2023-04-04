@@ -10,6 +10,7 @@ const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
   const [showBtmTxt, setShowBtm] = useState(false);
   const [modalProps, setModalProps] = useState({});
+
   const Button1 = ({ id, buttonName, active_a, setActive_a }) => {
     return (
       <div
@@ -22,6 +23,7 @@ const Portfolio = () => {
       </div>
     );
   };
+
   const Modal = () => {
     return (
       <div
@@ -44,7 +46,10 @@ const Portfolio = () => {
             <AiFillCloseCircle
               size={32}
               color={"white"}
-              style={{ backgroundColor: "black", borderRadius: "50%" }}
+              style={{
+                backgroundColor: "black",
+                borderRadius: "50%",
+              }}
               onClick={() => setShowModal(false)}
             />
           </div>
@@ -56,34 +61,46 @@ const Portfolio = () => {
           />
           <div className="modal-content">
             <div className="modal-content_title">
-              {modalProps.title.map((e, index) => (
+              {modalProps?.title.map((e, index) => (
                 <motion.span
                   key={index}
                   initial={{ opacity: 0 }}
-                  // animate={{ opacity: 1 }}
-                  whileHover={{ scale: [0, 1.3, 0.8], opacity: 1 }}
-                  transition={{ duration: 4 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: index * 0.2 }}
+                  style={{ marginRight: "0.7px" }}
                 >
                   {e}
                 </motion.span>
               ))}
             </div>
-            <div>
+            <div className="modal-content_description">
               <h2>Description</h2>
-              <motion.p exit={{ opacity: 0 }}>
-                {modalProps.description}
-              </motion.p>
+              <motion.div exit={{ opacity: 0 }} className="modal-text">
+                <p>{modalProps.description}</p>
+              </motion.div>
             </div>
-            <div>
+            <div className="modal-content_stack">
               <h2>Stack Used</h2>
-              <p>{modalProps.stack}</p>
+              <div>
+                {modalProps?.stack.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))}
+              </div>
             </div>
-            <div>
+            <div className="modal-content_links">
               <h2>Links</h2>
-              <a href={modalProps.githubLink}> repo</a>
-              <a href={modalProps.previewLink} target="_self">
-                preview
-              </a>
+              <div>
+                <a
+                  href={modalProps.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  repo
+                </a>
+                <a href={modalProps.previewLink} target="_self">
+                  preview
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -187,22 +204,11 @@ const Portfolio = () => {
                 alt="Image Alt"
                 initial={{ opacity: 1 }}
                 whileHover={{ opacity: 0.7 }}
-                onHoverStart={(e) => {
-                  console.log(e);
-                  setShowBtm(true);
-                }}
-                onHoverEnd={() => setShowBtm(false)}
               />
             </div>
-            {showBtmTxt && (
-              <div
-                className="bottom-center"
-                onHoverStart={() => setShowBtm(true)}
-                onHoverEnd={() => setShowBtm(false)}
-              >
-                <span>{portfolio.title}</span>
-              </div>
-            )}
+            <div className="bottom-center">
+              <span>{portfolio.title}</span>
+            </div>
           </motion.div>
         ))}
       </div>
