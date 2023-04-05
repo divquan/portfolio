@@ -38,8 +38,7 @@ const Portfolio = () => {
           transition={{ type: "spring", duration: 0.5 }}
           exit={{
             opacity: 0,
-            height: [100, 80, 60, 40, 10],
-            width: [100, 80, 60, 40, 10],
+            scale: 0,
           }}
         >
           <div className="close">
@@ -89,18 +88,32 @@ const Portfolio = () => {
             </div>
             <div className="modal-content_links">
               <h2>Links</h2>
-              <div>
-                <a
-                  href={modalProps.githubLink}
-                  target="_blank"
-                  rel="noreferrer"
+              {modalProps.status ? (
+                <div>
+                  <a
+                    href={modalProps.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    repo
+                  </a>
+                  <a href={modalProps.previewLink} target="_self">
+                    preview
+                  </a>
+                </div>
+              ) : (
+                <div
+                  style={{
+                    padding: "0.3rem",
+                    borderRadius: "7px",
+                    backgroundColor: "#747474",
+                    textAlign: "center",
+                    color: "white",
+                  }}
                 >
-                  repo
-                </a>
-                <a href={modalProps.previewLink} target="_self">
-                  preview
-                </a>
-              </div>
+                  <span>Under development</span>
+                </div>
+              )}
             </div>
           </div>
         </motion.div>
@@ -174,7 +187,6 @@ const Portfolio = () => {
         // whileInView={{ x: [-200, 0], opacity: 1 }}
         // transition={{ duration: 1 }}
       >
-        <AnimatePresence>{showModal && <Modal />}</AnimatePresence>
         {works.map((portfolio, index) => (
           <motion.div
             className="single_work"
@@ -192,10 +204,20 @@ const Portfolio = () => {
                 githubLink: portfolio.githubLink,
                 image: portfolio.img,
                 previewLink: portfolio.previewLink,
+                status: portfolio.status,
               });
             }}
           >
-            <div>
+            <motion.div
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 20px 30px rgba(255, 255, 255, 0.25)",
+                transition: {
+                  duration: 0.4,
+                  ease: "easeInOut",
+                },
+              }}
+            >
               <motion.img
                 src={portfolio.img}
                 width={600}
@@ -203,9 +225,21 @@ const Portfolio = () => {
                 PlaceholderSrc={portfolio.img_x}
                 alt="Image Alt"
                 initial={{ opacity: 1 }}
-                whileHover={{ opacity: 0.7 }}
+                // whileHover={{
+                //   opacity: 0.7,
+                //   scale: 1.5,
+                //   rotate: 360,
+                //   transition: { duration: 0.5 },
+                // }}
+                whileHover={{
+                  scale: 1.02,
+                  transition: {
+                    duration: 0.4,
+                    ease: "easeInOut",
+                  },
+                }}
               />
-            </div>
+            </motion.div>
             <div className="bottom-center">
               <span>{portfolio.title}</span>
             </div>
@@ -226,6 +260,7 @@ const Portfolio = () => {
         </div>
         <div></div>
       </div>
+      <AnimatePresence>{showModal && <Modal />}</AnimatePresence>
     </div>
   );
 };

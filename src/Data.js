@@ -99,30 +99,40 @@ export const portfolios = [
     img: portfolio,
     previewLink: "https://divquan.netlify.app/",
     githubLink: "https://github.com/divquan/portfolio",
-    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
+    title: ["M", "y", " ", "P", "o", "r", "f", "o", "l", "i", "o"],
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
-    stack: ["React", "Scss", "NodeJs", "Express"],
+      "It's a user-friendly website with a professional design that's easy to navigate. I built it using HTML, CSS, JavaScript, and React, and made sure it works great on all devices. ",
+    stack: ["React", "Scss", "NodeJs", "framer-motion"],
+    status: true,
   },
   {
     type: "web",
     img: work2,
-    previewLink: "",
-    githubLink: "",
+    previewLink: "https://campuswave.netlify.app",
+    githubLink: "https://github.com/divquan/campuswave-frontend",
     title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
+      "Campuwave blog app  university students. The app has a user-friendly interface with user authentication, post validation, and image processing and hosting, and sharing features to encourage collaboration. The app is scalable and easy to maintain with Node.js as the backend. ",
     stack: ["React", "Scss", "NodeJs", "Express"],
+    status: true,
   },
   {
-    type: "design",
+    type: "app",
     img: work3,
     previewLink: "https://campuswave.netlify.app",
-    githubLink: "https://github.com/divquan/campuswave",
-    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
+    githubLink: "https://github.com/divquan/campuswave-frontend",
+    title: ["C", "L", "C", " ", "A", "p", "p"],
     description:
       "Campus Wave is a blogging app for students in the various universities in Ghana. It features an user authentication. One can, if logged in write blog posts, edit ones blog posts and delete them as well.",
-    stack: ["React", "Scss", "NodeJs", "Express", "mySQL"],
+    stack: [
+      "React Native",
+      "WordPress API",
+      "REST api",
+      "NodeJs",
+      "Express",
+      "mySQL",
+    ],
+    status: false,
   },
   {
     type: "app",
@@ -133,6 +143,7 @@ export const portfolios = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
+    status: true,
   },
   {
     type: "app",
@@ -143,6 +154,7 @@ export const portfolios = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
+    status: true,
   },
   {
     type: "app",
@@ -153,6 +165,7 @@ export const portfolios = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
     stack: ["React", "Scss", "NodeJs", "Express"],
+    status: false,
   },
 ];
 

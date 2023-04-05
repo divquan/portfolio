@@ -62,6 +62,7 @@
     }
     .bottom-center {
       position: absolute;
+      display: none;
       bottom: 6px;
       left: 0;
       background-color: rgba(0, 0, 0, 0.781);
@@ -70,6 +71,11 @@
       padding: 4px;
       span {
         stroke: black 2px;
+      }
+    }
+    &:hover {
+      .bottom-center {
+        display: block;
       }
     }
     // .single_work-info {
@@ -130,18 +136,16 @@
   height: 100%;
   overflow: auto;
   // background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.726);
+  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.426);
   @media screen and (max-width: 580px) {
     align-items: flex-start;
   }
-  &:hover {
-    cursor: pointer;
-  }
   .modal-box {
     max-width: 700px;
-    position: absolute;
-    height: 450px;
-    background-color: #d4d4d4;
+    position: fixed;
+    height: auto;
+    background-color: rgb(241, 241, 241);
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
@@ -167,7 +171,6 @@
 
     img {
       width: 45%;
-      height: 100%;
       border-radius: 2rem;
       border-radius: 1rem;
       background-color: #30223b54;
@@ -179,9 +182,49 @@
       }
     }
     .modal-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
       .modal-content_title {
         font-weight: 800;
-        font-size: large;
+        font-size: 2rem;
+      }
+      .modal-text {
+        border-radius: 13px;
+        font-family: cursive;
+        font-size: 17px;
+      }
+      // .modal-content_description {
+      // }
+      .modal-content_stack {
+        div {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          p {
+            padding: 6px;
+            background-color: #8e76a5;
+            border-radius: 12px;
+            width: fit-content;
+            align-content: center;
+            text-align: center;
+            color: white;
+          }
+        }
+      }
+      .modal-content_links {
+        div {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+          a {
+            color: black;
+            &:hover {
+              content: "hi";
+            }
+          }
+        }
       }
     }
   }
