@@ -10,6 +10,7 @@ const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
   const [showBtmTxt, setShowBtm] = useState(false);
   const [modalProps, setModalProps] = useState({});
+  const [hoverSingle, setSingleHover] = useState(false);
 
   const Button1 = ({ id, buttonName, active_a, setActive_a }) => {
     return (
@@ -208,16 +209,7 @@ const Portfolio = () => {
               });
             }}
           >
-            <motion.div
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 20px 30px rgba(255, 255, 255, 0.25)",
-                transition: {
-                  duration: 0.4,
-                  ease: "easeInOut",
-                },
-              }}
-            >
+            <motion.div whileHover={() => setSingleHover(true)}>
               <motion.img
                 src={portfolio.img}
                 width={600}
@@ -225,24 +217,23 @@ const Portfolio = () => {
                 PlaceholderSrc={portfolio.img_x}
                 alt="Image Alt"
                 initial={{ opacity: 1 }}
-                // whileHover={{
-                //   opacity: 0.7,
-                //   scale: 1.5,
-                //   rotate: 360,
-                //   transition: { duration: 0.5 },
-                // }}
                 whileHover={{
-                  scale: 1.02,
+                  scale: 1.15,
+                  skewX: -3,
+                  skewY: 3,
                   transition: {
                     duration: 0.4,
                     ease: "easeInOut",
+                    originX: 0,
                   },
                 }}
               />
             </motion.div>
-            <div className="bottom-center">
-              <span>{portfolio.title}</span>
-            </div>
+            <AnimatePresence>
+              <div className="bottom-center">
+                <span>{portfolio.title}</span>
+              </div>
+            </AnimatePresence>
           </motion.div>
         ))}
       </div>

@@ -80,7 +80,13 @@ export const experiences = [
     link: "https://compeng.knust.edu.gh",
   },
   {
-    year: "2020 - Present",
+    year: "2023 - present",
+    position: "Full Stack Engineer Intern",
+    company: "African Bully Registry",
+    link: "https://africanbullyregistry.com/",
+  },
+  {
+    year: "2020 - 2023",
     position: "Web Developer",
     company: "CLC - GH",
     link: "https://clcgh.org",
@@ -94,6 +100,26 @@ export const experiences = [
 ];
 
 export const portfolios = [
+  {
+    type: "web",
+    img: work4,
+    previewLink: "https://campuswave.netlify.app",
+    githubLink: "https://github.com/divquan/campuswave-frontend",
+    title: ["A", "S", "S", "I", "B", "I"],
+    description:
+      "Assibi is an multivendor online trading platform, where individual can buy farm produce from farmers and farmers can hire farm machinery, land 0ther farm tools.  Preview available at https://assibi.netlify.app/ ",
+    stack: [
+      "React Js",
+      "Stripe",
+      "MonogoDB",
+      "NodeJs",
+      "Express",
+      "Redux",
+      "Bootstrap",
+      "Material UI",
+    ],
+    status: false,
+  },
   {
     type: "web",
     img: portfolio,
@@ -132,39 +158,6 @@ export const portfolios = [
       "Express",
       "mySQL",
     ],
-    status: false,
-  },
-  {
-    type: "app",
-    img: work4,
-    previewLink: "",
-    githubLink: "",
-    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
-    stack: ["React", "Scss", "NodeJs", "Express"],
-    status: true,
-  },
-  {
-    type: "app",
-    img: work5,
-    previewLink: "",
-    githubLink: "",
-    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
-    stack: ["React", "Scss", "NodeJs", "Express"],
-    status: true,
-  },
-  {
-    type: "app",
-    img: work6,
-    previewLink: "",
-    githubLink: "",
-    title: ["C", "a", "m", "p", "u", "s", " ", "w", "a", "v", "e"],
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit praesentium magnam. Enim cupiditate nobis hic ",
-    stack: ["React", "Scss", "NodeJs", "Express"],
     status: false,
   },
 ];

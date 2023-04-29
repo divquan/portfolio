@@ -4,6 +4,7 @@ import Button from "../../Button/Button";
 import { bios } from "../../../Data";
 import "./About.scss";
 import { motion } from "framer-motion";
+import resume from "../../../assets/resume.pdf";
 
 // const Contact = () => {
 //   return <div className="about_contacts"> </div>;
@@ -61,7 +62,9 @@ function About() {
               </div>
             ))}
           </div>
-          <Button buttonName="Download Resume" />
+          <a href={resume}>
+            <Button buttonName="Download Resume" />
+          </a>
         </motion.div>
       </div>
     </div>

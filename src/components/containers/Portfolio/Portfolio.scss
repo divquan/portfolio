@@ -39,11 +39,11 @@
   position: relative;
 
   .single_work {
-    max-width: 320px;
-    min-width: 300px;
+    width: clamp(150px, 100%, 350px);
     height: auto;
     position: relative;
     border-radius: 0.6rem 0.6rem 0 0;
+    overflow: hidden;
     margin: 1.4rem;
     cursor: pointer;
     @media screen and (max-width: 600px) {
@@ -54,6 +54,7 @@
 
     img {
       border-radius: 0.6rem 0.6rem 0 0;
+      aspect-ratio: 16/10;
       width: 100%;
       margin: 0;
       height: 100%;
@@ -62,9 +63,11 @@
     }
     .bottom-center {
       position: absolute;
-      display: none;
+      // display: none;
       bottom: 6px;
-      left: 0;
+      left: -100px;
+      opacity: 0;
+      transition: all 0.3s ease;
       background-color: rgba(0, 0, 0, 0.781);
       color: white;
       border-radius: 0 7px 7px 0;
@@ -75,30 +78,11 @@
     }
     &:hover {
       .bottom-center {
-        display: block;
+        // display: block;
+        left: 0;
+        opacity: 1;
       }
     }
-    // .single_work-info {
-    //   padding: 0.3rem;
-    //   background-color: hsl(0, 0%, 100%);
-    //   opacity: 0.7;
-
-    //   div {
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    //     align-items: center;
-
-    //     :last-child {
-    //       margin-top: 5px;
-    //       text-align: center;
-    //       color: #8c12f0;
-    //       &:hover {
-    //         text-decoration: underline;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 .portfolio_container-footer {
@@ -149,7 +133,6 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
-    padding: 1rem;
     gap: 1.5rem;
     @media screen and (max-width: 580px) {
       padding: 0.4rem;
@@ -171,11 +154,7 @@
 
     img {
       width: 45%;
-      border-radius: 2rem;
-      border-radius: 1rem;
-      background-color: #30223b54;
-      border: rgba(0, 0, 0, 0.26) 1px solid;
-      // margin-top: 32px;
+      border-radius: 1rem 0 0 1rem;
       object-fit: cover;
       @media screen and (max-width: 580px) {
         width: 100%;
@@ -191,7 +170,6 @@
       }
       .modal-text {
         border-radius: 13px;
-        font-family: cursive;
         font-size: 17px;
       }
       // .modal-content_description {
@@ -204,7 +182,7 @@
           gap: 10px;
           p {
             padding: 6px;
-            background-color: #8e76a5;
+            background-color: #6d3f9680;
             border-radius: 12px;
             width: fit-content;
             align-content: center;
@@ -214,6 +192,8 @@
         }
       }
       .modal-content_links {
+        margin: 0 12px 12px 0;
+
         div {
           display: flex;
           flex-direction: row;

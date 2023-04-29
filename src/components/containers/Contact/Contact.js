@@ -19,10 +19,12 @@ function Contact() {
         <div className="portfolio_body-left">
           <h2> Just Say Hi</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum
-            consequatur iste impedit maiores adipisci pariatur perspiciatis
-            eaque at quia non in nulla quae, recusandae veritatis tenetur
-            fugiat, quod sunt!
+            Hi there! Thanks for stopping by my portfolio website. If you're
+            interested in collaborating on a project, or have any questions or
+            comments about my work, I'd love to hear from you. I'm always
+            excited to connect with new people and discuss interesting ideas. So
+            don't be shy - drop me a line using the contact form below and let's
+            get the conversation started
           </p>
           <div className="loc">
             {Locations.map((item) => (
