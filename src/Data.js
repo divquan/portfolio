@@ -22,9 +22,9 @@ import {
 import portfolio from "./assets/portfolio.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
-import work4 from "./assets/work4.png";
-import work5 from "./assets/work5.png";
-import work6 from "./assets/work6.png";
+import afbr from "./assets/afbr.png";
+import verliore from "./assets/verliore.png";
+import photoguy from "./assets/photoguy.png";
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
 export const socials = [
@@ -102,12 +102,12 @@ export const experiences = [
 export const portfolios = [
   {
     type: "web",
-    img: work4,
-    previewLink: "https://campuswave.netlify.app",
-    githubLink: "https://github.com/divquan/campuswave-frontend",
-    title: ["A", "S", "S", "I", "B", "I"],
+    img: afbr,
+    previewLink: "https://africanbullyregistry.com/",
+    githubLink: "https://github.com/divquan/",
+    title: ["African Bully Registry"],
     description:
-      "Assibi is an multivendor online trading platform, where individual can buy farm produce from farmers and farmers can hire farm machinery, land 0ther farm tools.  Preview available at https://assibi.netlify.app/ ",
+      "This registry is created to bring and unite all passionate breeders and dog lovers together, especially in Africa..",
     stack: [
       "React Js",
       "Stripe",
@@ -159,6 +159,42 @@ export const portfolios = [
       "mySQL",
     ],
     status: false,
+  },
+
+  {
+    type: "web",
+    img: verliore,
+    previewLink: "https://veliore.vercel.app/",
+    githubLink: "https://github.com/divquan/",
+    title: ["Veliore"],
+    //give me a sample description for the ecommerce site, verliore
+    description:
+      "Verliore is an upscale online fashion boutique that I developed from the ground up. This project demonstrates my ability to design and implement an elegant and responsive e-commerce platform. It includes features like product categorization, a user-friendly shopping cart, secure payment processing, and a visually appealing UI.",
+    stack: [
+      "React JS",
+      "Tailwind",
+      "Vercel Serverless Functions",
+      "Firestore database",
+    ],
+    status: true,
+  },
+
+  {
+    type: "web",
+    img: photoguy,
+    previewLink: "https://the-photo-chef-t9qnyfsdb-bismuthlabs.vercel.app/",
+    githubLink: "https://github.com/bismuthlabs/the.photo.chef",
+    title: ["The Photo Chef"],
+    //give me a sample description for the ecommerce site, verliore
+    description:
+      "The Photo Chef is a custom linktree for the photographer, Chef. It features a custom design and a user-friendly interface.",
+    stack: [
+      "React JS",
+      "Tailwind",
+      "Vercel Serverless Functions",
+      "Firestore database",
+    ],
+    status: true,
   },
 ];
 
