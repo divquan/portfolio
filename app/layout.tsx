@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+//👇 Configure the object for our second font
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto-mono",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={robotoMono.className}>
+        <Navbar /> {children}
+        <Footer />
+      </body>
     </html>
   );
 }
