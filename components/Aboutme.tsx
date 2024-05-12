@@ -20,12 +20,12 @@ const Aboutme = () => {
         </div>
         <div className="flex-1 gap-2">
           <p>
-            I'm a product developer, working at the intersection of technology,
-            design & user. I build things that scale and have strong technical
-            foundations. But, I'm a designer at heart — I love getting my hands
-            dirty, prototyping and listening to users.{"\n\n"}
+            I&apos;m a product developer, working at the intersection of
+            technology, design & user. I build things that scale and have strong
+            technical foundations. But, I&apos;m a designer at heart — I love
+            getting my hands dirty, prototyping and listening to users.{"\n\n"}
           </p>
-          <p>I'm hands-on, curious, and pragmatic. I get things done.</p>
+          <p>I&apos;m hands-on, curious, and pragmatic. I get things done.</p>
           <Button>
             My Resume <LuSheet size={24} />
           </Button>

@@ -17,7 +17,7 @@ const Herosection = () => {
       <div className="flex justify-between flex-col md:flex-row">
         <div>
           <p className={`text-2xl mb-3 ${space_grotestk.className}`}>
-            HI! , i'm
+            HI! , i&apos;m
           </p>
           <p
             className={`text-[50px] md:text-[64px] mb-0 ${strasua.className} leading-[66px] mb-5`}
